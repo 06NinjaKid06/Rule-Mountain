@@ -1,0 +1,11 @@
+- name: Install Lua/LuaJIT
+  # You may pin to the exact commit or the version.
+  # uses: leafo/gh-actions-lua@35bcb06abec04ec87df82e08caa84d545348536e
+  uses: leafo/gh-actions-lua@v10.0.0
+  with:
+    # The version of Lua to install, must be available on https://www.lua.org/ftp/ or http://luajit.org/download.html
+    luaVersion: # optional, default is 5.4
+    # Command line flags passed to make when building Lua
+    luaCompileFlags: # optional
+    # Set to 'false' to skip restoring .lua from cache and always compile it
+    buildCache: # optional, default is true
